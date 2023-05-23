@@ -28,7 +28,7 @@ The game currently includes three scene modes:
 
 ## Rationale
 
-This project utilizes the Godot Engine written in C++ for our game development. Godot employs an intuitive tree-like node system that greatly facilitates the development process. Each game object is a node, and nodes can have other nodes as children, which makes for an easy-to-understand hierarchical system.
+This project utilizes the Godot Engine written in C++ for our game development and Vulkan for rendering. Godot employs an intuitive tree-like node system that greatly facilitates the development process. Each game object is a node, and nodes can have other nodes as children, which makes for an easy-to-understand hierarchical system.
 
 In Godot, each node comes with a set of functionalities that can be expanded with scripts. This enables the quick use of global variables such as cursor XY position, and position / rotation of sprites. For more information on how Godot works, see the [official Godot documentation](https://docs.godotengine.org/en/stable/).
 
