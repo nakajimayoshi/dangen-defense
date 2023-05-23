@@ -2,6 +2,8 @@
 
 ![gameplay](gameplay.png)
 
+Availible to download for Windows x86 [here](https://github.com/nakajimayoshi/dangen-defense/releases/tag/0.1.0)
+
 This document will provide an overview of the resources used and features included in the game.
 
 ## Table of Contents
@@ -46,6 +48,15 @@ A brief explanation of how it works:
 5. `Failure_scene.gd`: This script controls the game over scene. It allows the player to try again, quit the game, or return to the main menu【37†source】.
 
 6. `Menu.gd`: This script controls the main menu of the game. It enables the player to start the game or quit【43†source】.
+
+
+## Build Instructions
+Required: [Godot Engine](https://godotengine.org/)
+ ### Debug 
+ Build the application by downloading the source files as a .zip and extracting. Import the extracted folder to a new project, and press f5 to run the game in debug mode. 
+
+ ### Release 
+ With the game open in the engine, navigate to the `Project` menu -> `Export` and export using default settings to the platform of your choice. Currently the game has only been succcesfully tested on Windows x86 builds. 
 
 ## Known Issues
 
