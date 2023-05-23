@@ -2,7 +2,7 @@
 
 ![gameplay](gameplay.png)
 
-Availible to download for Windows x86 [here](https://github.com/nakajimayoshi/dangen-defense/releases/tag/0.1.0)
+Available to download for Windows x86 [here](https://github.com/nakajimayoshi/dangen-defense/releases/tag/0.1.0)
 
 This document will provide an overview of the resources used and features included in the game.
 
