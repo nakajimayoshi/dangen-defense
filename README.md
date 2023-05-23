@@ -47,8 +47,6 @@ A brief explanation of how it works:
 
 6. `Menu.gd`: This script controls the main menu of the game. It enables the player to start the game or quit【43†source】.
 
-While I've reviewed these scripts, I haven't had the chance to look at all the scripts in the repository. These scripts, however, provide a decent understanding of the game's core mechanics.
-
 ## Known Issues
 
 There are a few known issues:
