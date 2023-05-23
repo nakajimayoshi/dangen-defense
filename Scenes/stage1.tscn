@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://uypye0e156e0"]
+
+[ext_resource type="PackedScene" uid="uid://cxkvaoqwifdqc" path="res://Scenes/tankA.tscn" id="1_2e4qg"]
+
+[sub_resource type="Curve2D" id="Curve2D_ln4kx"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 4, 1, 0, 0, 0, 0, 96, -3, 0, 0, 0, 0, 277, -3, 0, 0, 0, 0, 350, 32, 0, 0, 0, 0, 354, 93, 0, 0, 0, 0, 354, 197, 0, 0, 0, 0, 399, 255, 0, 0, 0, 0, 465, 239, 0, 0, 0, 0, 483, 67, 0, 0, 0, 0, 482, -158, 0, 0, 0, 0, 507, -250, 0, 0, 0, 0, 581, -252, 0, 0, 0, 0, 610, -94, 0, 0, 0, 0, 611, 133, 0, 0, 0, 0, 635, 243, 0, 0, 0, 0, 696, 250, 0, 0, 0, 0, 737, 216, 0, 0, 0, 0, 739, -208, 0, 0, 0, 0, 797, -259, 0, 0, 0, 0, 866, -219, 0, 0, 0, 0, 866, 210, 0, 0, 0, 0, 922, 256, 0, 0, 0, 0, 986, 228, 0, 0, 0, 0, 994, -39, 0, 0, 0, 0, 1005, -238, 0, 0, 0, 0, 1080, -257, 0, 0, 0, 0, 1126, -131, 0, 0, 0, 0, 1156, -7, 0, 0, 0, 0, 1294, -2, 0, 0, 0, 0, 1440, -1, 0, 0, 0, 0, 1484, -2)
+}
+point_count = 32
+
+[node name="Path2D" type="Path2D"]
+position = Vector2(-161, 384)
+curve = SubResource("Curve2D_ln4kx")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
+position = Vector2(2, 0)
+rotation = 0.463648
+loop = false
+metadata/_edit_group_ = true
+
+[node name="Tank A" parent="PathFollow2D" instance=ExtResource("1_2e4qg")]
+position = Vector2(-3.13049, -1.78885)
+rotation = -0.462512

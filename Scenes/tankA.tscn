@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cxkvaoqwifdqc"]
+
+[ext_resource type="Script" path="res://GD Scripts/tankA.gd" id="1_w6304"]
+[ext_resource type="Texture2D" uid="uid://6a4537m5iq1o" path="res://Assets/Environment/Sprites/tank_green.png" id="2_grfwf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l21i4"]
+size = Vector2(48, 44)
+
+[node name="Tank A" type="CharacterBody2D"]
+script = ExtResource("1_w6304")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_l21i4")
+
+[node name="TankGreen" type="Sprite2D" parent="."]
+rotation = -1.5708
+texture = ExtResource("2_grfwf")

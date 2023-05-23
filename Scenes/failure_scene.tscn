@@ -1,0 +1,62 @@
+[gd_scene load_steps=3 format=3 uid="uid://7kpsgqi4wese"]
+
+[ext_resource type="Script" path="res://failure_scene.gd" id="1_j5rl5"]
+[ext_resource type="FontFile" uid="uid://y66yjmsug4it" path="res://Assets/fonts/PressStart2P-Regular.ttf" id="2_6jiym"]
+
+[node name="Failure Scene" type="Node2D"]
+script = ExtResource("1_j5rl5")
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 2.0
+offset_top = -5.0
+offset_right = 1283.0
+offset_bottom = 724.0
+color = Color(0.0489037, 0.021279, 0.0708826, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect2"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = -150.0
+offset_right = 254.0
+offset_bottom = -3.0
+grow_vertical = 0
+
+[node name="Try Again" type="Button" parent="ColorRect2/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_6jiym")
+text = "Try Again"
+
+[node name="Main Menu" type="Button" parent="ColorRect2/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_6jiym")
+text = "Main Menu"
+
+[node name="QuitButton" type="Button" parent="ColorRect2/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_6jiym")
+text = "Quit Game"
+
+[node name="Label" type="Label" parent="ColorRect2"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -980.0
+offset_top = -36.5
+offset_bottom = 36.5
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(0.915, 0.915)
+theme_override_fonts/font = ExtResource("2_6jiym")
+theme_override_font_sizes/font_size = 70
+text = "Game over "
+uppercase = true
+
+[connection signal="pressed" from="ColorRect2/VBoxContainer/Try Again" to="." method="_on_try_again_pressed"]
+[connection signal="pressed" from="ColorRect2/VBoxContainer/Main Menu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="ColorRect2/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

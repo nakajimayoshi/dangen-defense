@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bhgy15sbfss4o"]
+
+[node name="VBoxContainer" type="VBoxContainer"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -120.0
+offset_right = 177.0
+grow_vertical = 0
+
+[node name="StartButton" type="Button" parent="."]
+layout_mode = 2
+text = "Start"
+
+[node name="OptionsButton" type="Button" parent="."]
+layout_mode = 2
+text = "Options"
+
+[node name="QuitButton" type="Button" parent="."]
+layout_mode = 2
+text = "Quit"
